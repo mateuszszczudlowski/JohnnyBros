@@ -1,0 +1,28 @@
+/* animations  */
+
+@keyframes logoGreenFill {
+    from {
+        fill: $white;
+    }
+    50% {
+        fill: $dark-green;
+    }
+    to {
+        fill: $white;
+    }
+}
+
+@keyframes logoFlipR {
+    from {
+        transform: rotateY(0);
+        fill: $white;
+    }
+    50% {
+        transform: rotateY(180deg);
+        fill: $dark-green;
+    }
+    to {
+        transform: rotateY(0);
+        fill: $white;
+    }
+}

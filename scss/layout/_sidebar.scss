@@ -1,0 +1,105 @@
+@include maxlg {
+    .mobile-menu-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(18, 30, 62, 0.7);
+        overflow: hidden;
+        z-index: 0;
+        display: none;
+    }
+    .mobile-menu-overlay-visiable {
+        z-index: 2;
+        display: block;
+    }
+}
+
+.side-navigation {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, top 0.6s ease-in-out;
+    padding: 7.5em 2.5em 2.5em 3.75em;
+    height: 100%;
+    min-height: 430px;
+    background-color: rgb(30, 48, 102);
+    color: rgb(255, 255, 255);
+    z-index: 3;
+    width: 500px;
+    position: fixed;
+    top: -100%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    @include rwd(700) {
+        width: 90%;
+    }
+}
+
+.side-navigation--open {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.side-navigation-nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    width: 100%;
+}
+
+.menu-list-mobile {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    &__link {
+        font-size: 3rem;
+        line-height: 65px;
+        display: block;
+        color: rgb(255, 255, 255);
+        position: relative;
+        font-family: 'Raleway';
+        &:before {
+            content: '';
+            transition: .3s opacity, transform .3s;
+            transform: translateX(-15px);
+            display: block;
+            height: 3px;
+            width: 42px;
+            background: $dark-green;
+            position: absolute;
+            top: 31px;
+            left: -60px;
+            opacity: 0;
+        }
+        &:hover {
+            &:before {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @include rwd(700) {
+            font-size: 2.2rem;
+        }
+    }
+}

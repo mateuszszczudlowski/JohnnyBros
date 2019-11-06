@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(../fonts/Raleway/Raleway-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Raleway Bold'), local('Raleway-Bold'), url(../fonts/Raleway/Raleway-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Millunium-Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Millunium Medium'), local('Millunium-Medium'), url(../fonts/Millunium/Millunium-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Fontawesome';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fontawesome'), local('Fontawesome'), url(../fonts/FontAwesome/fontawesome-webfont.ttf) format('truetype');
+}

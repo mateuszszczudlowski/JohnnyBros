@@ -1,0 +1,15 @@
+.hamburger-menu-icon {
+    display: none;
+    @include maxlg {
+        display: block;
+        cursor: pointer;
+        &--regular {
+            font-size: 22px;
+            color: rgb(255, 255, 255);
+            transition: color .3s;
+            &:hover {
+                color: $dark-green;
+            }
+        }
+    }
+}

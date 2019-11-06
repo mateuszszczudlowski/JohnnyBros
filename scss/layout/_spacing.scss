@@ -1,0 +1,130 @@
+// Padding
+.pad-all-43 {
+    padding: 4.3rem;
+}
+
+.pad-all-48 {
+    padding: 4.8rem;
+    @include maxlg {
+        padding: 4.8rem 2.8rem;
+    }
+    @include maxxl {
+        padding: 2.8rem;
+    }
+}
+
+.pad-left-0 {
+    padding-left: 0;
+}
+
+// Margin
+.mar-bot-56 {
+    margin-bottom: 5.6rem;
+    @include maxlg {
+        margin-bottom: 3.6rem;
+    }
+}
+
+.mar-bot-10 {
+    margin-bottom: 1rem;
+}
+
+.mar-bot-20 {
+    margin-bottom: 2rem;
+}
+
+.mar-bot-30 {
+    margin-bottom: 3rem;
+}
+
+.mar-bot-40 {
+    margin-bottom: 4rem;
+}
+
+.mar-bot-50 {
+    margin-bottom: 5rem;
+}
+
+.mar-top-5 {
+    margin-top: .5rem;
+}
+
+.mar-top-10 {
+    margin-top: 1rem;
+}
+
+.mar-top-15 {
+    margin-top: 1.5rem;
+}
+
+.mar-top-20 {
+    margin-top: 2rem;
+}
+
+.mar-top-80 {
+    margin-top: 8rem;
+    @include maxlg {
+        margin-top: 14rem;
+    }
+}
+
+.mar-left-0 {
+    margin-left: 0;
+}
+
+// Positions
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.top-30 {
+    top: 30px;
+    @include maxlg {
+        top: 0;
+    }
+}
+
+.top-100 {
+    top: 100px;
+}
+
+.top--30 {
+    top: -30px;
+    @include maxlg {
+        top: 0;
+    }
+}
+
+.top--70 {
+    top: -70px;
+    @include maxlg {
+        top: 0;
+    }
+}
+
+.top--90 {
+    top: -90px;
+}
+
+.top--110 {
+    top: -110px;
+}
+
+.top--155 {
+    top: -155px;
+}
+
+.left-40 {
+    left: 40px;
+    @include maxlg {
+        left: 30px;
+    }
+}
+
+.top-140 {
+    top: 140px;
+}

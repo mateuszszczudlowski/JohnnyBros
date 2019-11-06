@@ -1,0 +1,19 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+// Extra large desktops
+$screen-sl-min: 1600px;
+// Colors
+$white: rgb(255, 255, 255);
+$dark-green: rgb(63, 174, 73);
+$dark-blue: rgb(30, 48, 102);
+$gray: rgba(0, 0, 0, .5);
+$gray-middle: rgba(0, 0, 0, .4);
+$light-gray: rgba(255, 255, 255, .7);
+// Animations settings
+$animationSettings: 6.5s infinite alternate;

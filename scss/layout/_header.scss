@@ -1,0 +1,17 @@
+.header {
+    &__container {
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @include maxlg {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include maxmd {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

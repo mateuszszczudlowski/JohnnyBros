@@ -1,0 +1,14 @@
+.logo {
+    &__animation_fill {
+        fill: $white;
+        animation: logoGreenFill 6.5s infinite alternate;
+    }
+    &__animation_flip {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        -webkit-transform-origin: 82.2% 50%;
+        transform-origin: 82.2% 50%;
+        -webkit-animation: logoFlipR 6.5s infinite alternate;
+        animation: logoFlipR 6.5s infinite alternate;
+    }
+}

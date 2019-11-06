@@ -1,0 +1,17 @@
+.footer {
+    background: $dark-blue;
+    min-height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__link {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        color: $white;
+        font-family: 'Raleway';
+        transition: color .3s;
+        &:hover {
+            color: $dark-green;
+        }
+    }
+}
