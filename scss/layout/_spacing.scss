@@ -66,6 +66,9 @@
     @include maxlg {
         margin-top: 14rem;
     }
+    @include rwd(700) {
+        margin-top: 4rem;
+    }
 }
 
 .mar-left-0 {
@@ -90,6 +93,9 @@
 
 .top-100 {
     top: 100px;
+    @include rwd(700) {
+        top: 0;
+    }
 }
 
 .top--30 {
@@ -122,6 +128,12 @@
     left: 40px;
     @include maxlg {
         left: 30px;
+    }
+}
+
+@include rwd(480) {
+    .padding-mobile-10 {
+        padding: 0 10px;
     }
 }
 

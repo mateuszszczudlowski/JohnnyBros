@@ -14,4 +14,14 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    @include rwd(1300) {
+        .header__container {
+            max-width: calc(100% - 40px);
+        }
+    }
+    @include rwd(700) {
+        .header__container {
+            max-width: calc(100% - 0px);
+        }
+    }
 }

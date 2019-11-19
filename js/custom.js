@@ -31,8 +31,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
 const sideNav = $(".side-navigation"),
     menuOverlay = $(".mobile-menu-overlay");
 $(".hamburger-menu-icon").click(function() {
+    $("body").addClass('hide-overflow');
     sideNav.addClass("side-navigation--open"), menuOverlay.addClass("mobile-menu-overlay-visiable")
 }), $(".mobile-menu-overlay, .close").on("click", function() {
+    $("body").removeClass('hide-overflow');
     sideNav.removeClass("side-navigation--open"), menuOverlay.removeClass("mobile-menu-overlay-visiable")
 }), $(".form__input").blur(function() {
     $.trim(this.value).length ? $(this).next("label").addClass("form__label--filled") : $(this).next("label").removeClass("form__label--filled")
